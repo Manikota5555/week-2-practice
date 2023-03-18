@@ -1,0 +1,45 @@
+write a program for student year
+
+import java.util.Scanner;
+
+public class StudentYear {
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    System.out.println("enter the student year");
+    int year = s.nextInt();
+    System.out.println("enter the student branch");
+    char ch = s.next().charAt(0);
+    switch (year) {
+      case 1:
+        System.out.println("1st year");
+        switch (ch) {
+          case 'c':
+            System.out.println("Subject Math Physics Computer");
+            break;
+          case 'm':
+            System.out.println("Subject Math Physics Computer");
+            break;
+          case 'e':
+            System.out.println("Subject Math Physics Computer");
+            break;
+        }
+        break;
+      case 2:
+        System.out.println("2nd year");
+        switch (ch) {
+          case 'c':
+            System.out.println("Subject java msql Computer");
+            break;
+          case 'm':
+            System.out.println("Subject thermodynamic automobile mechanical");
+            break;
+          case 'e':
+            System.out.println("Subject network devices electronics");
+            break;
+        }
+        break;
+      default:
+        System.out.println("invalid input");
+    }
+  }
+}

@@ -1,0 +1,23 @@
+write a program to find the Bignumber.
+
+import java.util.Scanner;
+
+class Bignumber {
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+    int num1, num2, num3;
+    System.out.println("enter the num1: ");
+    num1 = s.nextInt();
+    System.out.println("enter the num2: ");
+    num2 = s.nextInt();
+    System.out.println("enter the num3: ");
+    num3 = s.nextInt();
+    if (num1 > num2 && num1 > num3) {
+      System.out.println("bignumber is: " + num1);
+    } else if (num2 > num3) {
+      System.out.println("bignumber is: " + num2);
+    } else {
+      System.out.println("bignumber is: " + num3);
+    }
+  }
+}

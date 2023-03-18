@@ -1,0 +1,23 @@
+write a program to check the MaximumValue
+
+import java.util.Scanner;
+
+class MaximumValue {
+
+  public static void main(String args[]) {
+    Scanner s = new Scanner(System.in);
+
+    System.out.println("How many values do you want to enter");
+    int n = s.nextInt();
+    int max = 0;
+    System.out.println("Enter " + n + " values");
+    for (int i = 1; i <= n; i++) {
+      int num = s.nextInt();
+      if (max < num) {
+        max = num;
+      }
+    }
+    System.out.println("MaximumValue: " + max);
+  }
+
+}
